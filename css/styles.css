@@ -1,0 +1,156 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--white-color: #fffaf2;
+	--light-brown-color: #f5d6ab;
+	--brown-color: #c66c49;
+	--dark-brown-color: #8b4136;
+	--dark-gray-color: #333333;
+}
+
+body {
+	font-family: 'Libre Franklin', sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 1.7;
+	letter-spacing: 0;
+	color: var(--dark-gray-color);
+	background-color: var(--white-color);
+}
+
+ul,
+ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+.container {
+	max-width: 1147px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.site-wrapper {
+	background-image: url(../images/header/Background.png);
+	background-position: center;
+}
+
+.site-header {
+	padding-top: 93px;
+	padding-bottom: 93px;
+}
+
+.site-header__container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.site-header__logo-link {
+	margin-right: 20px;
+}
+
+.site-header__list {
+	display: flex;
+	align-items: center;
+}
+
+.site__header__item:not(:last-child) {
+	margin-right: 60px;
+}
+
+.site-header__link {
+	color: var(--white-color);
+}
+
+.site-header__logo-link:hover {
+	color: var(--white-color);
+}
+
+.site-header__logo-link:active {
+	color: var(--white-color);
+	opacity: 0.4;
+}
+
+.menu {
+  display: block;
+}
+
+.hero {
+	padding-top: 52px;
+	padding-bottom: 240px;
+	color: var(--white-color);
+}
+
+.hero__link {
+	color: var(--white-color);
+}
+
+/* MEDIA */
+@media screen and (max-width: 1024) {
+	body {
+		font-size: 16px;
+	}
+
+	.site-header {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+
+	.site__header__item:not(:last-child) {
+		margin-right: 40px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	body {
+		font-size: 14px;
+	}
+
+	.site-header {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+
+	.site-header__container {
+		justify-content: center;
+	}
+
+	.site-header__list {
+		display: none;
+	}
+
+	.menu {
+		display: inline;
+		position: absolute;
+		top: 60px;
+		left: 20px;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	body {
+		font-size: 12px;
+	}
+
+	.site-header {
+		padding-top: 39px;
+		padding-bottom: 39px;
+	}
+
+	.menu {
+		top: 39px;
+	}
+}
